@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AFAEBFB729C9EFE700108196 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAEBFB629C9EFE700108196 /* HomeVC.swift */; };
-		AFAEBFB929C9EFFC00108196 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAEBFB829C9EFFC00108196 /* DetailVC.swift */; };
-		AFAEBFBB29C9F03000108196 /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAEBFBA29C9F03000108196 /* FavoritesVC.swift */; };
+		AFAEBFB729C9EFE700108196 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAEBFB629C9EFE700108196 /* HomeViewController.swift */; };
+		AFAEBFB929C9EFFC00108196 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAEBFB829C9EFFC00108196 /* MovieDetailViewController.swift */; };
+		AFAEBFBB29C9F03000108196 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAEBFBA29C9F03000108196 /* FavoritesViewController.swift */; };
 		AFFFD88A29C9DA8900028E73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFD88929C9DA8900028E73 /* AppDelegate.swift */; };
 		AFFFD88C29C9DA8900028E73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFD88B29C9DA8900028E73 /* SceneDelegate.swift */; };
 		AFFFD89129C9DA8900028E73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFFD88F29C9DA8900028E73 /* Main.storyboard */; };
@@ -38,9 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AFAEBFB629C9EFE700108196 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		AFAEBFB829C9EFFC00108196 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
-		AFAEBFBA29C9F03000108196 /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
+		AFAEBFB629C9EFE700108196 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AFAEBFB829C9EFFC00108196 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		AFAEBFBA29C9F03000108196 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		AFFFD88629C9DA8900028E73 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFFD88929C9DA8900028E73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFFFD88B29C9DA8900028E73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,9 +105,9 @@
 			children = (
 				AFFFD88929C9DA8900028E73 /* AppDelegate.swift */,
 				AFFFD88B29C9DA8900028E73 /* SceneDelegate.swift */,
-				AFAEBFB629C9EFE700108196 /* HomeVC.swift */,
-				AFAEBFB829C9EFFC00108196 /* DetailVC.swift */,
-				AFAEBFBA29C9F03000108196 /* FavoritesVC.swift */,
+				AFAEBFB629C9EFE700108196 /* HomeViewController.swift */,
+				AFAEBFB829C9EFFC00108196 /* MovieDetailViewController.swift */,
+				AFAEBFBA29C9F03000108196 /* FavoritesViewController.swift */,
 				AFFFD88F29C9DA8900028E73 /* Main.storyboard */,
 				AFFFD89229C9DA8A00028E73 /* Assets.xcassets */,
 				AFFFD89429C9DA8A00028E73 /* LaunchScreen.storyboard */,
@@ -264,9 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFAEBFB929C9EFFC00108196 /* DetailVC.swift in Sources */,
-				AFAEBFBB29C9F03000108196 /* FavoritesVC.swift in Sources */,
-				AFAEBFB729C9EFE700108196 /* HomeVC.swift in Sources */,
+				AFAEBFB929C9EFFC00108196 /* MovieDetailViewController.swift in Sources */,
+				AFAEBFBB29C9F03000108196 /* FavoritesViewController.swift in Sources */,
+				AFAEBFB729C9EFE700108196 /* HomeViewController.swift in Sources */,
 				AFFFD88A29C9DA8900028E73 /* AppDelegate.swift in Sources */,
 				AFFFD88C29C9DA8900028E73 /* SceneDelegate.swift in Sources */,
 			);
