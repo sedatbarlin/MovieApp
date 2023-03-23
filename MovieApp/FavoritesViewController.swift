@@ -1,5 +1,5 @@
 //
-//  HomeVC.swift
+//  FavoritesVC.swift
 //  MovieApp
 //
 //  Created by Sedat on 21.03.2023.
@@ -7,14 +7,13 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
+final class FavoritesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
     }
-
     
     
 }
