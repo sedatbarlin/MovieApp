@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+protocol MovieDetailInteractorInterface: AnyObject {
+    
+}
+
+final class MovieDetailInteractor {
+    
+}

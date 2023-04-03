@@ -28,6 +28,11 @@ final class MovieDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Movies"
+        presenter?.viewDidLoad()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter?.viewWillAppear()
     }
 }
 
@@ -48,3 +53,4 @@ extension MovieDetailViewController: MovieDetailViewInterface {
         movieNameLabel.text = text
     }
 }
+

@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+protocol MovieDetailRouterInterface: AnyObject {
+    
+}
+
+final class MovieDetailRouter {
+    
+}
