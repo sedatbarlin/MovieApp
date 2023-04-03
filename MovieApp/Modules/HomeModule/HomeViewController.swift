@@ -20,7 +20,7 @@ final class HomeViewController: UIViewController {
     
     @IBAction func goToDetailButton(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "DetailVC")
+        let vc = storyboard.instantiateViewController(withIdentifier: "DetailViewController")
         self.navigationController?.show(vc, sender: nil)
     }
     
