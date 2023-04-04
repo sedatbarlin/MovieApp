@@ -11,7 +11,6 @@ protocol MovieDetailPresenterInterface {
     func viewDidLoad()
     func viewWillAppear()
 }
-
 final class MovieDetailPresenter {
     private weak var view: MovieDetailViewInterface?
     private let interactor: MovieDetailInteractorInterface
@@ -22,7 +21,6 @@ final class MovieDetailPresenter {
         self.router = router
     }
 }
-
 extension MovieDetailPresenter: MovieDetailPresenterInterface {
     func viewDidLoad() {
         view?.setMovieNameLabel(text: "Star Wars: The Last Jedi")
@@ -30,8 +28,6 @@ extension MovieDetailPresenter: MovieDetailPresenterInterface {
         view?.setMovieImdbLabel(text: "7.0 (IMDb)")
         view?.setMovieMinutesLabel(text: "152 minutes")
     }
-    
     func viewWillAppear() {
-        
     }
 }

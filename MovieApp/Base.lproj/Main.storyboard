@@ -49,7 +49,7 @@
         <!--Movie Detail View Controller-->
         <scene sceneID="mgf-1A-9Yz">
             <objects>
-                <viewController storyboardIdentifier="DetailViewController" id="9Ih-qL-Cr6" customClass="MovieDetailViewController" customModule="MovieApp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MovieDetailViewController" id="9Ih-qL-Cr6" customClass="MovieDetailViewController" customModule="MovieApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rJ3-23-Ua4">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,6 +117,12 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="40"/>
                                 </buttonConfiguration>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xrx-9r-yyN">
+                                <rect key="frame" x="16" y="490" width="87.333333333333329" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3LU-c9-on0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -124,16 +130,19 @@
                             <constraint firstItem="gX1-q3-aU5" firstAttribute="top" secondItem="3LU-c9-on0" secondAttribute="top" id="7ce-PD-soy"/>
                             <constraint firstItem="mcZ-v9-gHP" firstAttribute="top" secondItem="rJ3-23-Ua4" secondAttribute="top" constant="433" id="C06-s2-5i4"/>
                             <constraint firstItem="3LU-c9-on0" firstAttribute="trailing" secondItem="gX1-q3-aU5" secondAttribute="trailing" id="EoU-Hq-Mv7"/>
+                            <constraint firstItem="Xrx-9r-yyN" firstAttribute="top" secondItem="uxU-Op-NuI" secondAttribute="bottom" constant="19.670000000000002" id="Gqr-Pi-wNk"/>
                             <constraint firstItem="VkY-jc-puj" firstAttribute="top" secondItem="uxU-Op-NuI" secondAttribute="bottom" constant="20" id="HPe-7a-q6d"/>
                             <constraint firstItem="M47-Hv-u6J" firstAttribute="top" secondItem="rJ3-23-Ua4" secondAttribute="top" constant="362" id="IUG-xa-dND"/>
                             <constraint firstItem="gX1-q3-aU5" firstAttribute="leading" secondItem="3LU-c9-on0" secondAttribute="leading" id="JD1-Tp-Q70"/>
                             <constraint firstItem="VkY-jc-puj" firstAttribute="top" secondItem="uxU-Op-NuI" secondAttribute="bottom" constant="20" id="Mpl-0f-6Xg"/>
                             <constraint firstItem="M47-Hv-u6J" firstAttribute="top" secondItem="gX1-q3-aU5" secondAttribute="bottom" constant="19" id="Pmt-mw-0U2"/>
+                            <constraint firstItem="Xrx-9r-yyN" firstAttribute="leading" secondItem="3LU-c9-on0" secondAttribute="leading" constant="16" id="Ppm-as-5hX"/>
                             <constraint firstItem="mcZ-v9-gHP" firstAttribute="top" secondItem="M47-Hv-u6J" secondAttribute="bottom" constant="16.670000000000002" id="QC4-Jb-fXM"/>
                             <constraint firstItem="3LU-c9-on0" firstAttribute="trailing" secondItem="mcZ-v9-gHP" secondAttribute="trailing" constant="16" id="Qqu-lf-q7Y"/>
                             <constraint firstItem="JOp-Fs-kWz" firstAttribute="centerY" secondItem="gX1-q3-aU5" secondAttribute="centerY" id="U1i-6B-qx4"/>
                             <constraint firstItem="3LU-c9-on0" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VkY-jc-puj" secondAttribute="trailing" symbolic="YES" id="XS9-1P-8yF"/>
                             <constraint firstItem="mcZ-v9-gHP" firstAttribute="leading" secondItem="3LU-c9-on0" secondAttribute="leading" constant="16" id="aRh-HY-dKa"/>
+                            <constraint firstItem="3LU-c9-on0" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Xrx-9r-yyN" secondAttribute="trailing" symbolic="YES" id="aaq-4v-ajh"/>
                             <constraint firstItem="gX1-q3-aU5" firstAttribute="leading" secondItem="rJ3-23-Ua4" secondAttribute="leading" id="adv-eo-xAq"/>
                             <constraint firstItem="VkY-jc-puj" firstAttribute="leading" secondItem="3LU-c9-on0" secondAttribute="leading" constant="16" id="auD-vh-9sI"/>
                             <constraint firstAttribute="bottom" secondItem="mcZ-v9-gHP" secondAttribute="bottom" constant="410" id="c8y-84-stF"/>
@@ -147,6 +156,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Isn-HO-HSK"/>
                     <connections>
+                        <outlet property="movieDescriptionLabel" destination="Xrx-9r-yyN" id="rmQ-wX-tLO"/>
                         <outlet property="movieImdbLabel" destination="ecE-Qj-F6m" id="yfX-gD-Qoh"/>
                         <outlet property="movieMinutesLabel" destination="zvD-vY-49d" id="ZwX-AU-GW6"/>
                         <outlet property="movieNameLabel" destination="kTL-v8-g0h" id="nic-Em-eiC"/>
