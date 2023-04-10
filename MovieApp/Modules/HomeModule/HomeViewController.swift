@@ -8,18 +8,13 @@
 import UIKit
 
 final class HomeViewController: UIViewController {
-    @IBOutlet weak var playButton: UIButton!
-    
-    @IBOutlet weak var collectionView: UICollectionView!
-    
+    @IBOutlet private weak var goToDetailButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Movies"
     }
-    
-    @IBAction func playButton(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "DetailVC")
-        self.navigationController?.show(vc, sender: nil)
+    @IBAction private func goToDetailButton(_: UIButton) {
+        guard let navigationController = navigationController else { return }
+        let viewController = MovieDetailRouter.createModule(using: navigationController)
+        navigationController.show(viewController, sender: nil)
     }
 }
