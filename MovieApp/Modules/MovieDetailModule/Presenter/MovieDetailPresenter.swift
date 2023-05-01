@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol MovieDetailPresenterInterface {
+protocol MovieDetailPresenterInterface: AnyObject {
     func viewDidLoad()
 }
 
